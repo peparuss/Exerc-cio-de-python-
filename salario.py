@@ -5,6 +5,12 @@ lista_vendedores = ["Emily", "Larissa", "Rafael", "Milena"]
 vendas = []
 salarios = []
 
+a = 0
+while a < 4:
+    venda = float(input(f'Quanto foi vendido por {lista_vendedores[a]}: '))
+    vendas.append(venda)
+    a+= 1
+
 
 a = 0
 while a < 4:
@@ -18,7 +24,7 @@ while b < 4 :
     if (vendas[b]<5000.00):
         salario = 1000.00 + 0.01*vendas[b]
         salarios.append(salario)
-    if (5000.00<=vendas[b]<=10000.00):
+    if ( 5000.00<=vendas[b]<=10000.00):
         salario = 1000.00 + 0.015*vendas[b]
         salarios.append(salario)
     if (vendas[b]>10000.00):
